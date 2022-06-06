@@ -8,13 +8,14 @@
   }
 
 main {
+    margin-top: 100px;
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
-.grid {
+.box {
     width: 380px;
     height: 460px;
 }
@@ -45,7 +46,7 @@ p {
     margin-left: 40px;
     margin-right: 40px;
     font-size: 20px;
-    word-spacing: 8px;
+    word-spacing: 6px;
 }
 
 svg {
@@ -59,7 +60,7 @@ button {
     width: 200px;
     height: 50px;
     border-radius: 20px;
-    cursor:pointer;
+    cursor: pointer;
     background: transparent;
     border: 3px solid white;
     border-radius: 30px;
@@ -76,8 +77,21 @@ button {
 
 @media screen and (max-width: 375px) {
   html {
+    font-size: 8px;
+  }
+
+  main {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    font-size: 16px;
+  }
+
+  .box {
+      width: 300px;
+      height: 450px;
+  }
+
+  button {
+      justify-content: center;
+      text-align: center;
   }
 }
