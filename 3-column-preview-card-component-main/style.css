@@ -4,7 +4,7 @@
   }
 
 .attribution a {
-    color: hsl(0, 100%, 50%);
+    color: hsl(256, 100%, 50%);
   }
 
 main {
@@ -12,7 +12,6 @@ main {
     color: white;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
 }
 
 .box {
@@ -96,12 +95,19 @@ button {
   }
 
   #box1 {
+      border-bottom: 0px;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       border-bottom-left-radius: 0px;
   }
 
+  #box2 {
+      border-top: 0px;
+      border-bottom: 0px;
+  }
+
   #box3 {
+      border-top: 0px;
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px;
       border-top-right-radius: 0px;
